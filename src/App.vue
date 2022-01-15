@@ -1,11 +1,21 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-    </div>
-    <router-view/>
+    <Unavailable></Unavailable>
   </div>
 </template>
+
+<script>
+import Unavailable from './views/Unavailable.vue'
+
+export default {
+  name: 'Home',
+  components: {
+    Unavailable
+  }
+}
+
+</script>
+
 
 <style>
 
