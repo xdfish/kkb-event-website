@@ -1,14 +1,6 @@
 <template>
-  <div class="home">
-    <p>hello</p>
-  </div>
+    <div>
+      
+
+    </div>
 </template>
-
-<script>
-
-export default {
-  name: 'Home',
-  components: {
-  }
-}
-</script>
