@@ -2,7 +2,7 @@
   <div id="app" >
     <Header id="header"></Header>
     <v-container id="main">
-      <Top></Top>
+      <Top id="top"></Top>
     </v-container>
     <v-container id="footer">
     </v-container>
@@ -10,9 +10,7 @@
 </template>
 
 <script>
-//import Unavailable from './views/Unavailable.vue'
-//import Home from './views/Home.vue'
-//import Impressum from './components/Impressum.vue'
+
 import Header from './components/Header.vue'
 import Top from './components/Top.vue'
 
@@ -21,9 +19,6 @@ export default {
   components: {
     Header,
     Top
-    //Unavailable,
-    //Home,
-    //Impressum,
   }
 }
 
@@ -37,6 +32,15 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background: black;
+}
+#header{
+  position: relative;
+  z-index: 2;
+}
+#top{
+  position: relative;
+  z-index: 1;
 }
 </style>
 

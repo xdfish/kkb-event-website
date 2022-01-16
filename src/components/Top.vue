@@ -18,7 +18,7 @@ export default {
 
 <style >
     #video{
-        z-index: 1;
+        z-index: 0;
         background-color: black;
     }
 </style>
