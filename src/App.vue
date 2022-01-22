@@ -40,11 +40,12 @@ export default {
   color: #2c3e50;
 }
 #header{
-  position: relative;
+  position: fixed;
   z-index: 2;
 }
 #main {
-  height:500px;
+  position: relative;
+  top: 100px;
   overflow-y: auto;
 }
 
