@@ -1,9 +1,10 @@
 <template>
   <div id="app" >
     <Header id="header"></Header>
-    <v-container id="main">
+    <div id="main">
       <Top id="top"></Top>
-    </v-container>
+      <Over></Over>
+    </div>
     <v-container id="footer">
     </v-container>
   </div>
@@ -13,12 +14,14 @@
 
 import Header from './components/Header.vue'
 import Top from './components/Top.vue'
+import Over from './components/Over.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    Top
+    Top,
+    Over,
   }
 }
 
@@ -26,18 +29,25 @@ export default {
 
 
 <style>
+*{
+  margin: 0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background: black;
 }
 #header{
   position: relative;
   z-index: 2;
 }
+#main {
+  height:500px;
+  overflow-y: auto;
+}
+
 #top{
   position: relative;
   z-index: 1;
