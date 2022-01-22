@@ -3,14 +3,15 @@
         <VideoBackground 
           id="bg-video" 
           :src="require('@/assets/video/kkb_low.mp4')" 
-          style="max-height: 600px; height: 600px;"
-          overlay="linear-gradient(to top, rgba(0, 0, 0, 0) 97%, black 100%)">
+          :poster="require('@/assets/image/bg_start.jpeg')">
+          <div id="overlay">
             <div id="top-content">
               <b id="top-text">IHR EXPERTE FÜR VERANSTALTUNGSTECHNIK</b>
               <v-btn>
                 <img @click="$vuetify.goTo('#over')" id="arrow" src="../assets/image/arrow_down_circle.png" alt="kkb-event">
               </v-btn>
             </div>
+          </div>
         </VideoBackground>
     </div>
 </template>
@@ -28,7 +29,14 @@ export default {
 </script>
 
 <style >
+    #overlay {
+      width: 100%;
+      height:100%;
+      background-image: url("../assets/image/overlay.png");;
+    }
     #bg-video {
+      max-height: 600px; 
+      height: 600px;
       background-color: black;
     }
     #top-content {
