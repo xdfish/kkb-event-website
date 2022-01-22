@@ -2,7 +2,7 @@
     <div id="header">
       <div id="header-content">
         <div id="logo-container">
-        <img id="logo" src="../assets/image/kkb.png" alt="kkb-event">
+            <img id="logo" src="../assets/image/kkb.png" alt="kkb-event">
         </div>
         <div id="slogan">
             <b style="font-size:20px;">feel the power of light</b>
@@ -36,7 +36,7 @@
 #logo-container {
     width:200px;
     height:200px;
-    background-color:rgba(0, 0, 0, 0.8);
+    background-color:rgba(0, 0, 0, 0.5);
     border-radius: 50%;
 }
 
